@@ -1,6 +1,6 @@
 *{
     margin: 0px;
-    padding: 0px; 
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color:aquamarine; 
+    background-color:aquamarine;
 }
 
 .logo{
@@ -26,10 +26,15 @@ nav{
     width: 60%;
 }
 
-.nav-links a{   
+.nav-links a{
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
     font-family:'Trebuchet MS';
     font-size: 14;
+}
+li:hover{
+    background-color: yellow;
+
+
 }
