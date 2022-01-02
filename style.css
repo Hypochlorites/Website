@@ -24,6 +24,7 @@ nav{
     display: flex;
     justify-content: space-around;
     width: 60%;
+    list-style-type: none;
 }
 
 .nav-links a{
@@ -32,9 +33,16 @@ nav{
     font-weight: bold;
     font-family:'Trebuchet MS';
     font-size: 14;
+
 }
 li:hover{
     background-color: yellow;
 
 
+}
+img{
+    display: block;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
 }
