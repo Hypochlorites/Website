@@ -36,7 +36,7 @@ nav{
     font-size: 14;
 
 }
-li:hover{
+.nav-links li:hover{
     background-color: yellow;
 
 
@@ -60,4 +60,8 @@ p{
 }
 body{
     background-color: darkseagreen;
+}
+
+.todo-container{
+  padding: 20px;
 }
