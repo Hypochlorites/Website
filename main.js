@@ -40,7 +40,10 @@ function deleteCheck(event) {
   if (item.classList[0] === "dlt-btn") {
     item.parentElement.remove();
   }
-
+  
+  if (item.classList[0] === "compl-btn") {
+    item.parentElement.classList.toggle("completed");
+  }
 
 
 

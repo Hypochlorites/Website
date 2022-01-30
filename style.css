@@ -65,3 +65,9 @@ body{
 .todo-container{
   padding: 20px;
 }
+
+.completed{
+  text-decoration-color: chartreuse;
+  text-decoration: line-through;
+  color: chartreuse;
+}
