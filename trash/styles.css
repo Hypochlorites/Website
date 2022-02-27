@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color:aquamarine;
+}
+.logo{
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px deeppink;
+    width: 20%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    list-style-type: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family:'Trebuchet MS';
+    font-size: 14;
+    padding: 20px;
+}
+.nav-links li:hover{
+    background-color: yellow;
+
+
+}
+/* For mobile  */
+@media only screen and (max-width: 750px) {
+  .nav-links {
+    flex-direction: column;
+    
+  }
+}
+@media only screen and (min-width: 751px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-links {
+    flex-direction: row; 
+  }
+  body {
+    background-color: red;
+  }
+}
+
+
+
+img{
+    display: block;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    border: 5px solid black;
+}
+
+
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+p{
+  
+    text-align: center;
+}
+body{
+    background-color: darkseagreen;
+}
+
+.todo-container{
+  padding: 20px;
+}
+
+.completed{
+  text-decoration-color: chartreuse;
+  text-decoration: line-through;
+  color: chartreuse;
+}
+
+.content-wrap {
+  box-sizing: border-box;
+  width: 35%;
+  margin: 40px auto;
+}
+h2 {
+  text-align: center;
+}
+form {
+  text-align:  center;
+}

@@ -4,43 +4,95 @@
     box-sizing: border-box;
 }
 
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color:aquamarine;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+  height: 4rem;  
 }
-
-.logo{
-    color: red;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 25px;
-    text-shadow: 2px 2px 2px deeppink;
-}
-
 .nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    list-style-type: none;
+  display: flex;
 }
 
-.nav-links a{
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-family:'Trebuchet MS';
-    font-size: 14;
+
+
+
+/* navbar mobile */
+@media only screen and (max-width: 750px){
+  nav{
+
+  }
+  
+  .nav-toggle{
+    position: absolute;
+    right: 1rem;
+    z-index: 99;
+  }
+  .nav-links{
+    flex-direction: column;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+  
+    padding-top: 5rem;
+  
+    width: 16rem;
+    height: 100%;
+    background-color: lightcyan;
+  
+    transform: translateX(100%);
+  
+  }
+}
+/* Different style for opening the menu */
+.nav-links[data-visible="true"]{
+  transform: translateX(0%);
+  transition: 0.3s ease-in;
+}
+
+
+/* navbar desktop */
+@media only screen and (min-width: 751px) {
+  .nav-toggle {
+    display: none;
+  }
+  nav {
+  }
+  .nav-links {
+    flex-direction: row; 
+    position: static;
+    align-items: center;
+    
+  }
+  
+
+
+
 
 }
-.nav-links li:hover{
-    background-color: yellow;
+
+    
+
+
+
+.nav-links li{
+  list-style: none;
+  padding: 1rem;
+  
 
 
 }
+
+.nav-links a {
+
+  text-decoration: none;
+
+
+
+}
+
+
 img{
     display: block;    
     margin-left: auto;
@@ -56,10 +108,11 @@ h1{
 }
 
 p{
+  
     text-align: center;
 }
 body{
-    background-color: darkseagreen;
+    background-color: lightblue;
 }
 
 .todo-container{
@@ -71,3 +124,17 @@ body{
   text-decoration: line-through;
   color: chartreuse;
 }
+
+.content-wrap {
+  box-sizing: border-box;
+  width: 35%;
+  margin: 40px auto;
+}
+h2 {
+  text-align: center;
+}
+form {
+  text-align:  center;
+}
+
+
